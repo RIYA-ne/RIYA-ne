@@ -169,3 +169,45 @@
 
 </html>
 ............................,......................................
+🔸BULP🔸
+
+(HTML)🔸
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb on/off</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="contener flex">
+
+    
+    <h1> Bulb Turn ON/OFF</h1>
+
+    <img src="bulboff.png" alt="Bulb off">
+    
+    <div class="btn">
+        <Button class="bulb-on" onclick="bulbon()">ON</Button>
+        <Button class="bulb-on" onclick="bulbon()">OFF</Button>
+        </div>
+
+        <script src="js/script.js"></script>.
+</body>
+</html>
+
+(JAVASCRIPT)🔸
+
+function bulbon(){
+    let bulbobj = document.querySelector(".bulpoff");
+    bulbobj.setAttribute("src", "image/bulb-on.png");
+}
+
+function bulboff(){
+    let bulbobj = document.querySelector(".bulpoff");
+    bulbobj.setAttribute("src", "image/bulb-off.png");
+    
+}
