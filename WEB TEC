@@ -1,2 +1,141 @@
+FORM VALIDATION 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
 
-    
+    <h2>Form Validation</h2>
+
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required><br><br>
+
+        <button type="submit">Submit</button>
+
+        <p id="errorMsg" class="error"></p>
+    </form>
+
+
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Get form values
+    const name = document.getElementById('name').value.trim();
+    const age = document.getElementById('age').value;
+    const phone = document.getElementById('phone').value.trim();
+    const errorMsg = document.getElementById('errorMsg');
+
+    // Clear previous error messages
+    errorMsg.textContent = '';
+
+    // Validate the form fields
+    if (name === '') {
+        errorMsg.textContent = 'Name is required.';
+        return;
+    }
+
+    if (age === '' || age < 18) {
+        errorMsg.textContent = 'Age is required and must be 18 or above.';
+        return;
+    }
+
+    if (phone === '' || isNaN(phone) || phone.length !== 10) {
+        errorMsg.textContent = 'Phone number is required, must be a number, and must be exactly 10 digits.';
+        return;
+    }
+
+    // Submit the form if all validations pass
+    alert('Form submitted successfully!');
+    // Optionally: document.getElementById('registrationForm').submit(); // If you want to actually submit the form
+
+});
+    </script>
+    </body>
+
+</html>
+.......................,..................,.................................
+BULB
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 3</title>
+</head>
+<body>
+    <p id="abc"> </p>
+    <p id="ab"> </p>
+    <p id="a"></p>
+    <h1 id="zx">Tanmai</h1>
+   <button onclick="change_colour()">CHANGE COLOUR</button> <br><br>
+   <p>
+    <img id="bulb" src="bulboff.png" alt="">
+</p>
+<button onclick="onbulb()" id="btn">On</button> <br><br>
+    <button onclick="window.print()">Print</button>
+
+    <script>
+        const array=["one","two","three"];
+        let text= "";
+        for(let i=0; i<array.length; i++)
+        {
+            text += array[i]+ "<br>";
+        }
+        
+        document.getElementById("abc").innerHTML=text;
+
+        const object={ name:"Tanmai", class:"Sybca",div:"B"};
+        let text1=""
+        for (let x in object){
+            text1+= object[x]+ "<br> ";
+        }
+        document.getElementById("ab").innerHTML=text1;
+        
+        
+        let text3 ="Tanmai";
+        text_Print=""
+        for(let x of text3)
+    {
+        text_Print+= x+ "";
+
+    }
+    document.getElementById("a").innerHTML=text_Print;
+
+    function change_colour(){
+        document.getElementById("zx").style.color="red";
+    }
+
+    function onbulb(){
+        let button = document.getElementById("btn");
+        let bulb = document.getElementById("bulb");
+          if (button.innerHTML=="On") {
+            bulb.src="bulbon.png";
+            button.innerHTML="Off"; 
+
+          }
+          else 
+          {
+            button.innerHTML="On";
+            bulb.src="bulboff.png";
+          }
+
+      }
+    </script>
+</body>
+</html>
+.,...................................................................
+
