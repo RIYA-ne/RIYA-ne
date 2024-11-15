@@ -1,4 +1,4 @@
-FORM VALIDATION 
+⚪FORM VALIDATION ⚪
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,7 +68,7 @@ FORM VALIDATION
 
 </html>
 .......................,..................,.................................
-BULB
+⚪BULB⚪
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,4 +138,124 @@ BULB
 </body>
 </html>
 .,...................................................................
+⚪ CALCULATOR ⚪
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .calculator {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+        }
+        #display {
+            width: 220px;
+            height: 40px;
+            text-align: right;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .wide {
+            width: 110px;
+        }
+    </style>
+</head>
+<body>
 
+    <h1>Simple Calculator</h1>
+
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+
+        <br>
+
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="backspace()">⌫</button>
+        <button onclick="insertOperator('/')">/</button>
+        <button onclick="insertOperator('*')">*</button>
+
+        <br>
+
+        <button onclick="insertNumber('7')">7</button>
+        <button onclick="insertNumber('8')">8</button>
+        <button onclick="insertNumber('9')">9</button>
+        <button onclick="insertOperator('-')">-</button>
+
+        <br>
+
+        <button onclick="insertNumber('4')">4</button>
+        <button onclick="insertNumber('5')">5</button>
+        <button onclick="insertNumber('6')">6</button>
+        <button onclick="insertOperator('+')">+</button>
+
+        <br>
+
+        <button onclick="insertNumber('1')">1</button>
+        <button onclick="insertNumber('2')">2</button>
+        <button onclick="insertNumber('3')">3</button>
+        <button onclick="calculate()">=</button>
+
+        <br>
+
+        <button onclick="insertNumber('0')" class="wide">0</button>
+        <button onclick="insertDot()">.</button>
+    </div>
+
+    <script>
+        let display = document.getElementById("display");
+
+        function clearDisplay() {
+            display.value = "";
+        }
+
+        function backspace() {
+            display.value = display.value.slice(0, -1);
+        }
+
+        function insertNumber(number) {
+            display.value += number;
+        }
+
+        function insertOperator(operator) {
+            if (display.value && !isNaN(display.value.slice(-1))) {
+                display.value += operator;
+            }
+        }
+
+        function insertDot() {
+            const parts = display.value.split(/[\+\-\*\/]/);
+            if (parts[parts.length - 1] && !parts[parts.length - 1].includes('.')) {
+                display.value += '.';
+            }
+        }
+
+        function calculate() {
+            try {
+                display.value = eval(display.value);
+            } catch (error) {
+                display.value = "Error";
+            }
+        }
+    </script>
+
+</body>
+</html>
