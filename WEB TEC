@@ -259,3 +259,119 @@
 
 </body>
 </html>
+⚪⚪
+label{
+    padding: auto;
+}
+input{
+    margin: 4px 13px;
+}
+<h2>Register User</h2>
+<form>
+  <label for="firstName">First Name:</label>
+  <input type="text" [(ngModel)]="firstName" name="firstName" required><br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" [(ngModel)]="lastName" name="lastName" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" [(ngModel)]="email" name="email" required><br>
+
+  <label for="Age">Age:</label>
+  <input type="number" [(ngModel)]="Age" name="Age" required><br><br>
+
+  <button type="button" (click)="registerUser()">Register</button>
+</form>
+import { Component } from '@angular/core';
+import { UserService } from '../user.service';
+import { User } from '../user.model';
+
+@Component({
+  selector: 'app-rigister',
+  templateUrl: './rigister.component.html',
+  styleUrl: './rigister.component.css'
+})
+export class RigisterComponent {
+  firstName: string = '';
+  lastName: string = '';
+  email: string = '';
+  Age: string = '';
+
+  constructor(private userService: UserService) { }
+
+  registerUser() {
+    const newUser: User = {
+      firstName: this.firstName,
+      lastName: this.lastName,
+      email: this.email,
+      Age: this.Age
+    };
+    this.userService.addUser(newUser);
+    // Clear the form after registration
+    this.firstName = '';
+    this.lastName = '';
+    this.email = '';
+    this.Age = '';
+}
+}
+<h2>Registered Users</h2>
+<ul>
+  <li *ngFor="let user of users">
+    {{user.firstName}} {{user.lastName}} <br> {{user.email}} <br> {{user.Age}} 
+  </li>
+</ul>
+[11/15, 2:28 PM] Tanmai: import { Component } from '@angular/core';
+import { UserService } from '../user.service';
+import { User } from '../user.model';
+
+@Component({
+  selector: 'app-user-list',
+  templateUrl: './user-list.component.html',
+  styleUrl: './user-list.component.css'
+})
+export class UserListComponent {
+  users: User[] = [];
+
+  constructor(private userService: UserService) {
+    this.users = this.userService.getUsers();
+  }
+}
+ div {
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 10px;
+  }
+<div style="display: flex;">
+  <div style="flex: 1; padding: 20px;">
+    <app-rigister></app-rigister>
+  </div>
+  <div style="flex: 1; padding: 20px;">
+    <app-user-list></app-user-list>
+  </div>
+</div>
+ export interface User {
+    firstName: string;
+    lastName: string;
+    email: string;
+    Age: string;
+  }
+ import { Injectable } from '@angular/core';
+import { User } from './user.model';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class UserService {
+  private users: User[] = [];
+
+  constructor() { }
+    // Method to add user
+    addUser(user: User) {
+      this.users.push(user);
+    }
+  
+    // Method to get all users
+    getUsers(): User[] {
+      return this.users;
+    }
+}
