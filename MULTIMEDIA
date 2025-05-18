@@ -1,1 +1,204 @@
+Experiment 1 :- Scenery
 
+
+
+
+Open Photoshop: Launch Adobe Photoshop and open the desired background image.
+Duplicate the Background: Press Ctrl + J to create a duplicate of the background layer for non-destructive editing.
+Add Visual Elements: Collect and import images of Venom, Spider-Man, and the Marvel logo. Use the Type Tool to add any desired text.
+Select Subjects: Use the Quick Selection Tool to select the subjects in each image. Carefully add or subtract from the selection, following the edges precisely.
+Place Elements: Use the Move Tool to drag and position each selected image onto the background.
+Arrange Layers: Keep the background image as the bottom layer. Stack other elements above it in an organized manner.
+Apply Layer Masking: Select a layer and click the “Add Layer Mask” icon. Use the Brush Tool with black as the foreground color to hide areas, or white to reveal them. Paint carefully to blend elements into the background. Use the "Refine Mask" feature for smoother edges if needed.
+Save Your Work: Save the project as a .PSD file to preserve layers and allow future edits
+
+Experiment  2 :- Poster Masking
+
+
+
+Open Photoshop: Launch Adobe Photoshop and open your invitation template as the background image.
+Add Text: Select the Type Tool, click on the desired area of the template, and enter the invitation details such as Lord Ganesha's name or image, the hosts' names, date, and venue.
+Customize Text Appearance: Open the Character panel (Window > Character) to adjust font style, size, spacing, and other text attributes.
+Ensure Design Consistency: Choose a font style that matches the overall theme and aesthetic of the invitation template.
+Adjust Colors: Use the Color Picker in the toolbar to select colors that complement the template design.
+Align Text: Use the Move Tool along with alignment options in the toolbar to properly position and align the text elements.
+Save Your Work: Save the file in .PSD format to retain layers and allow for future editing.
+
+
+Experiment 3 :- Portrait Collage
+                                               
+
+Gather Images: Collect all the high-resolution images you want to include in your collage.
+Start a New Project: Open Photoshop and create a new document with your desired dimensions.
+Add the Base Portrait: Drag and drop the portrait image into the document. Use the Move Tool (V) to resize and position it as the base layer.
+Import Collage Images: Drag and drop each collage image into the Photoshop document.
+Arrange the Images: Use the Move Tool (V) to resize and position each image over the portrait.
+Transform as Needed: Press Ctrl + T to activate the Transform Tool and adjust the size or rotation of each image for better fit.
+Select a Collage Layer: Click on one of the collage image layers to select it.
+Apply Clipping Mask: Right-click on the selected layer and choose "Create Clipping Mask" to clip it within the shape of the portrait.
+Repeat for All Images: Apply a clipping mask to each collage image so they all stay within the portrait boundary.
+Save Your Work: Go to File > Save As and save your project as a .PSD file for future editing.
+Experiment 4 :- Skin Retouching
+
+
+
+Launch Photoshop & Open Image: Start Photoshop and open the portrait image you want to retouch (File > Open).
+Create a Duplicate Layer: Press Ctrl + J to duplicate the original image layer. This allows for non-destructive editing.
+Remove Blemishes: Select the Spot Healing Brush Tool (J) and click on blemishes, acne, or small imperfections to remove them.
+Detailed Retouching: For more precise control, use the Healing Brush Tool or Clone Stamp Tool (S) on a new blank layer, making sure to check "Sample All Layers" in the options bar.
+(Optional) Frequency Separation for Advanced Editing:
+Duplicate the image layer twice.
+Apply Gaussian Blur to the lower duplicate to smooth out tones.
+On the top duplicate, use Apply Image to extract texture, then set the blend mode to Linear Light.
+Retouch the blurred layer for color and tone, and the texture layer for skin details.
+Smooth the Skin: Use the Mixer Brush Tool for natural blending or apply Surface Blur (Filter > Blur > Surface Blur) with gentle settings to smooth skin without losing texture.
+Dodge & Burn for Contouring:
+Create two Curves Adjustment Layers—one brightened (Dodge) and one darkened (Burn).
+Invert their masks and use a soft white brush to paint light and shadow, enhancing the facial structure.
+Enhance Eyes & Lips: Zoom in and use the Dodge Tool to brighten highlights and the Burn Tool to deepen shadows.
+Use Hue/Saturation adjustments to subtly enhance eye color or lip tone if desired.
+Color Correction: Use Curves, Selective Color, or Color Balance adjustments to unify skin tones and give the image a warmer or more polished look.
+Final Review & Save: Zoom out and toggle layer visibility to review your edits.
+Save your work as a .PSD file for future changes (File > Save As).
+Export the final image as JPEG or PNG for sharing or printing.
+
+
+Experiment 5 :- Text Masking
+
+
+Create a New Document: Open Photoshop and go to File > New. Set your preferred dimensions and resolution (e.g., 1920×1080 pixels at 300 DPI).
+Add Text: Select the Type Tool (T) from the toolbar and enter your desired word or phrase using a bold font like Impact or Arial Black.
+Position the Text: Use the Move Tool (V) to resize and center the text on the canvas as needed.
+Insert an Image: Open the image you want to place inside the text (File > Open), then drag it into your working document.
+Resize and Position the Image: Press Ctrl + T to activate the Transform Tool, and resize the image so it fully covers the text area.
+Layer Arrangement: In the Layers panel, ensure the image layer is placed directly above the text layer.
+Create a Clipping Mask: Right-click on the image layer and choose "Create Clipping Mask".
+  The image will now appear only through the shape of the text.
+Fine-Tune the Composition: Use the Move Tool (V) or Ctrl + T to adjust the image’s position or scale to best fit within the text.
+Add Visual Effects: Double-click the text layer to open Layer Style options. Add effects like Stroke, Drop Shadow, or Outer Glow to enhance the look.
+Save and Export: Save your project as a .PSD file for future edits. To use or share the image, go to File > Export > Export As, and save it as a JPEG or PNG.
+
+
+
+
+Experiment 6 :- Character GIF
+
+                                            
+
+Create a New Document: Open Photoshop and go to File > New. Set your canvas size (e.g., 800×800 pixels) and resolution (72 DPI is standard for web).
+Add Character Frames: Import or draw each frame of your character’s animation (e.g., walking, blinking, jumping) on separate layers. Each animation frame should be on its own layer.
+Open the Timeline Panel: Navigate to Window > Timeline to display the Timeline panel at the bottom of the workspace.
+Start Frame Animation: In the Timeline panel, click “Create Frame Animation”, then click the button to create your first frame.
+Generate Frames from Layers:
+Click the menu icon in the top-right corner of the Timeline panel.
+Choose “Make Frames from Layers” to automatically convert each layer into a separate animation frame.
+Set Frame Duration: Click the time displayed under each frame to set its duration (e.g., 0.2 seconds). Adjust timing to control the animation speed.
+Set Looping Option: At the bottom of the Timeline panel, set the looping option to “Forever” so the animation repeats continuously.
+Preview the Animation: Click the Play button in the Timeline panel to see your animation in action.
+Make Adjustments: Modify timing, position, or frame content by editing the layers or adjusting frame durations as needed.
+Export as GIF:
+Go to File > Export > Save for Web (Legacy).
+Choose GIF as the format, set colors to 256, and ensure the looping option is set to Forever.
+Click Save to export your animated GIF.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Experiment 7 :- 3D Hand Model
+
+
+Start in Blender: Open Blender and delete the default cube by pressing X and selecting Delete.
+Add a New Cube: Press Shift + A, then go to Mesh > Cube to add a new cube to the scene.
+Enter Edit Mode: Press Tab to switch from Object Mode to Edit Mode.
+Shape the Palm:
+In Edit Mode, use the Scale Tool (S) to reshape the cube into a palm-like form.
+Press Ctrl + R to insert loop cuts for better geometry and flexibility.
+To model the thumb, select a side face of the palm, then extrude (E), scale, and rotate (R) along the Z-axis (blue axis) to form the base of the thumb.
+Create the Fingers:
+Select the top face of the palm where the fingers will emerge.
+Press E to extrude and create the base of the fingers.
+Separate the Fingers:
+Select the face of one finger and press Ctrl + + to expand the selection.
+Use the Move Tool (G) to slightly space out each finger for better separation.
+Refine the Fingers:
+Use Ctrl + + again to fine-tune individual finger shapes by scaling (S).
+Add additional loop cuts (Ctrl + R) to provide more geometry for bending and shaping.
+To shape the fingertips, select the tip vertices and scale along the Y-axis (green axis).
+Select edges near the knuckles and move or rotate them to create a natural bend in the fingers.
+Adjust Hand Proportions:
+Use Extrude (E) and Scale (S) tools to tweak overall size and proportions of the hand.
+Extrude again if needed to refine thickness or wrist length.
+Save and Render: Press Ctrl + S to save your project. When ready, go to Render > Render Image to view your model.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Experiment 8 :- Stairs
+
+
+Launch Blender: Open Blender to start your project.
+Add a Cube: Press Shift + A, go to Mesh > Cube to add a new cube to the scene.
+Enter Edit Mode: Press Tab to switch from Object Mode to Edit Mode.
+Select an Edge: Click on any edge of the cube to select it.
+Enable Viewport Overlays: In the top-right corner, click the Viewport Overlays icon (small dropdown icon).
+Enhance Visibility: Under the Shadow section, enable Cavity to better visualize the model’s depth and detail.
+Apply Bevel: Press Ctrl + B to activate the Bevel Tool.
+Create the Bevel: Click and drag the mouse to apply the bevel to the selected edge.
+Adjust Segments: Use the mouse scroll wheel up or down to increase or decrease the number of bevel segments.
+Fine-Tune Bevel Settings: Look at the bottom-left corner of the viewport for the Bevel options panel.
+Apply Step Preset: In the panel, find the Preset dropdown and select Steps.
+Refine the Look: Adjust the Segments value to achieve a clean, step-like appearance.
+Add Grill Details: Switch to side view, select the desired face, and use the Extrude Region Tool (E) to drag out small sections, forming grill-like patterns.
+
+
+Experiment 9 :- 2-D Ball Bouncing
+
+Start a 2D Animation Project: Open Blender and select 2D Animation from the splash screen or go to File > New > 2D Animation.
+Draw the Ball: In the Grease Pencil workspace, choose the Draw Tool and sketch a simple ball on Frame 1.
+Open Timeline Controls: Use the Dope Sheet or Timeline at the bottom to manage your frames and keyframes.
+Animate the Ball Drop:
+Move to Frame 10.
+Select the ball and press G to move it downward, simulating it hitting the ground.
+Press I and choose Location to insert a keyframe.
+Animate the Bounce:
+Go to Frame 20, move the ball back up to simulate a bounce, and insert another Location keyframe (I).
+Continue the Animation:
+Repeat the process at regular intervals (e.g., Frame 30, 40, etc.) to build a full bouncing motion.
+Refine the Movement:
+Open the Graph Editor to adjust the animation curves.
+Modify the curve handles to create ease-in and ease-out for a more realistic bounce effect.
+Preview the Animation: Press Spacebar to play back your animation. Ensure the motion feels smooth and natural.
+Export the Animation:
+Go to Render > Render Animation or File > Export > FFmpeg Video (for MP4) or Image Sequence (for GIFs).
+Choose your desired output format and settings, then render the full animation.
